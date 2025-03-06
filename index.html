@@ -11,94 +11,108 @@
 </head>
 
 <body>
-    <h1>Metas do Ano</h1>
-    
-    <hr>
-
-    <nav>
-        <ul>
-            <li>
-                <a href="#html">Aprendendo HTML</a>
-            </li>
-            <li>
-                <a href="#vacation">Planejando uma viagem</a>
-            </li>
-        </ul>
-    </nav>
-
-    <hr>
-
-    <hr>
-    <section id="html">
-        <h2>Estou revisando HTML</h2>
-        <p>Essa é a primeira página de revisão.</p>
-        <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="Revisão de HTML5" width="300" height="300">
-        <figure>
-            <figcaption>Exemplo de código HTML5</figcaption>
-            <p>
-                <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
-            </p>
-            
-        </figure>
-        <h3>Minha Agenda Diária</h3>
-        <p>O que eu costumo fazer durante o dia...</p>
-        <ol>
-            <li>... Estudo desenvolvimento web.</li>
-            <li>... Planejo meu dia seguinte.</li>
-            <li>... Uso recursos do <abbr title="Mozilla Developer Network">
-                <a href="https://developer.mozilla.org/">MDN</a></abbr> para me ajudar com os estudos.</li>
-            <li>... Trabalho como product owner.</li>
-        </ol>
-    </section>
-    
-    <hr>
-
-    <section id="vacation">
-        <h2>Também estou planejando um passeio</h2>
-        <p>Tenho passado dias bem agitados, <em>realmente preciso de um descanso.</em>.</p>
-        <p>Eu moro em <abbr title="São Paulo">SP</abbr> então quero visitar a praia.</p>
-
-        <h3>Lugares que quero visitar</h3>
-        <ul>
-            <li>
-                <p>Ouvi falar de ótimas praias em São Sebastião e Bertioga</p>
-                <img src="img/caribbean.jpg" alt="Praia de Bertioga" title="Quero visitar algumas praias." width="400" height="225" loading="lazy">
-                <figcaption>
-                    Praia de Bertioga
-                </figcaption>
-            </li>
-            <li>
-                <p>Quero conhecer essa aqui, pois fica mais perto: </p>
-                <address>
-                    Bertioga - SP, 11250-000
-                </address>
-                <figure>
-                    <img src="img/vacation.jpg" alt="Passeio na Praia" title="Preciso conhecer essa praia">
-                    <figcaption>Uma praia linda</figcaption>
-                </figure>
-            </li>
-        </ul>
+    <header>
+        <h1>Metas do Ano</h1>
         
-        <!-- TODO: Add more places -->
-        <h3>Lugares que quero ir, fora do Brasil</h3>
-        <dl>
-            <dt>Chile</dt>
-            <dd>Quero muito esquiar no <strong>Chile</strong>!</dd>
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li>
+                    <a href="#html">Aprendendo HTML</a>
+                </li>
+                <li>
+                    <a href="#vacation">Planejando uma viagem</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-            <dt>Argentina</dt>
-            <dd>Preciso comer o churrasco argentino.</dd>
+    <main>
+        <article id="html">
+            <h2>Estou revisando HTML</h2>
+            <p>Essa é a primeira página de revisão.</p>
+            <section>
+                <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="Revisão de HTML5" width="300" height="300">
+                <figure>
+                    <figcaption>Exemplo de código HTML5</figcaption>
+                    <p>
+                        <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
+                    </p>
+                </figure>
+            </section>
+            <section>
+                <h3>Minha Agenda Diária</h3>
+                <p>O que eu costumo fazer durante o dia...</p>
+                <ol>
+                    <li>... Estudo desenvolvimento web.</li>
+                    <li>... Planejo meu dia seguinte.</li>
+                    <li>... Uso recursos do <abbr title="Mozilla Developer Network">
+                        <a href="https://developer.mozilla.org/">MDN</a></abbr> para me ajudar com os estudos.</li>
+                    <li>... Trabalho como product owner.</li>
+                </ol>
+                <aside>
+                    <details>
+                        <summary>Número de horas que estudei hoje</summary>
+                        <p>Eu comecei as <time datetime="08:00">8h</time> e fiquei estudando até as <time datetime="12:00">12h</time>.</p>
+                    </details>
+                </aside>
+            </section>
+        </article>
 
-            <dt>França</dt>
-            <dd>Quero conhecer o Museu do Louvre.</dd>
-        </dl>
-    </section>
+        <article id="vacation">
+            <section>
+                <h2>Também estou planejando um passeio</h2>
+                <p>Tenho passado dias bem agitados, <em>realmente preciso de um descanso.</em>.</p>
+                <p>Eu moro em <abbr title="São Paulo">SP</abbr> então quero visitar a praia.</p>
+            </section>
+            <section>
+                <h3>Lugares que quero visitar</h3>
+                <ul>
+                    <li>
+                        <p>Ouvi falar de ótimas praias em São Sebastião e Bertioga</p>
+                        <img src="img/caribbean.jpg" alt="Praia de Bertioga" title="Quero visitar algumas praias." width="400" height="225" loading="lazy">
+                        <figcaption>
+                            Praia de Bertioga
+                        </figcaption>
+                    </li>
+                    <li>
+                        <p>Quero conhecer essa aqui, pois fica mais perto: </p>
+                        <address>
+                            Bertioga - SP, 11250-000
+                        </address>
+                        <figure>
+                            <img src="img/vacation.jpg" alt="Passeio na Praia" title="Preciso conhecer essa praia">
+                            <figcaption>Uma praia linda</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+            
+            <!-- TODO: Add more places -->
+            <section>
+                <h3>Lugares que quero ir, fora do Brasil</h3>
+                <dl>
+                    <dt>Chile</dt>
+                    <dd>Quero muito esquiar no <strong>Chile</strong>!</dd>
 
-    <hr>
+                    <dt>Argentina</dt>
+                    <dd>Preciso comer o churrasco argentino.</dd>
 
-    &lt;&lt;&lt; &copy; <a href="about.html">Letícia França</a> &gt;&gt;&gt;
-    <p>
-        <a href="#">Voltar ao Topo</a>
-    </p>
+                    <dt>França</dt>
+                    <dd>Quero conhecer o Museu do Louvre.</dd>
+                </dl>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">Letícia França</a> &gt;&gt;&gt;
+        </p>
+        <p>
+            <a href="#">Voltar ao Topo</a>
+        </p>
+    </footer>
+    
 </body>
 
 </html>
