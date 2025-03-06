@@ -1,66 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Dave Gray">
-    <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML.">
-    <title>My First Web Pages</title>
+    <meta name="author" content="Letícia França">
+    <meta name="description" content="Essa página contém uma revisão de HTML.">
+    <title>Metas do Ano</title>
     <link rel="icon" href="html5.png" type="image/x.icon">
     <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 
 <body>
-    <h1>Hello World</h1>
-
-    <h2>I'm Ready to Learn HTML</h2>
-    <p>This is my first web page.</p>
-
-    <h3>My Daily Schedule</h3>
-    <p>Let me tell you how I...</p>
-    <ol>
-        <li>... I learn more about web dev.</li>
-        <li>... I plan out my Schedule.</li>
-        <li>... I use resources from <abbr title="Mozilla Developer Network">MDN</abbr>.</li>
-    </ol>
+    <h1>Metas do Ano</h1>
     
     <hr>
 
-    <h2>I am Also Planning a Vacation</h2>
-    <p>I've been working hard and <em>really need a getaway</em>.</p>
-    <p>I live in <abbr title="Kansas">KS</abbr> so I want visit a beach.</p>
-
-    <h3>Place I'd Like to Visit</h3>
-    <ul>
-        <li>
-            <p>I've heard good things about the Caribbean.</p>
-        </li>
-        <li>
-            <p>I've heard good things about going here:</p>
-            <address>
-                Margaritaville Island Reserve Riviera Cancún<br>
-                Bahia Petempich Puerto Morelos, Mexico<br>
-                Colonia Morelos, México 77580
-            </address>
-        </li>
-    </ul>
-    
-    <!-- TODO: Add more places -->
-    <h3>Place I want to Avoid</h3>
-    <dl>
-        <dt>North Pole</dt>
-        <dd>I hear this is <strong>cold</strong>!</dd>
-
-        <dt>South Pole</dt>
-        <dd>This is also cold.</dd>
-
-        <dt>Mountain Tops</dt>
-        <dd>These are also cold.</dd>
-    </dl>
+    <nav>
+        <ul>
+            <li>
+                <a href="#html">Aprendendo HTML</a>
+            </li>
+            <li>
+                <a href="#vacation">Planejando uma viagem</a>
+            </li>
+        </ul>
+    </nav>
 
     <hr>
 
-    &lt;&lt;&lt; &copy; Letícia França &gt;&gt;&gt;
+    <hr>
+    <section id="html">
+        <h2>Estou revisando HTML</h2>
+        <p>Essa é a primeira página de revisão.</p>
+
+        <h3>Minha Agenda Diária</h3>
+        <p>O que eu costumo fazer durante o dia...</p>
+        <ol>
+            <li>... Estudo desenvolvimento web.</li>
+            <li>... Planejo meu dia seguinte.</li>
+            <li>... Uso recursos do <abbr title="Mozilla Developer Network">
+                <a href="https://developer.mozilla.org/">MDN</a></abbr> para me ajudar com os estudos.</li>
+            <li>... Trabalho como product owner.</li>
+        </ol>
+    </section>
+    
+    <hr>
+
+    <section id="vacation">
+        <h2>Também estou planejando um passeio</h2>
+        <p>Tenho passado dias bem agitados, <em>realmente preciso de um descanso.</em>.</p>
+        <p>Eu moro em <abbr title="São Paulo">SP</abbr> então quero visitar a praia.</p>
+
+        <h3>Lugares que quero visitar</h3>
+        <ul>
+            <li>
+                <p>Ouvi falar de ótimas praias em São Sebastião e Bertioga</p>
+            </li>
+            <li>
+                <p>Quero conhecer essa aqui, pois fica mais perto: </p>
+                <address>
+                    Bertioga - SP, 11250-000
+                </address>
+            </li>
+        </ul>
+        
+        <!-- TODO: Add more places -->
+        <h3>Lugares que quero ir, fora do Brasil</h3>
+        <dl>
+            <dt>Chile</dt>
+            <dd>Quero muito esquiar no <strong>Chile</strong>!</dd>
+
+            <dt>Argentina</dt>
+            <dd>Preciso comer o churrasco argentino.</dd>
+
+            <dt>França</dt>
+            <dd>Quero conhecer o Museu do Louvre.</dd>
+        </dl>
+    </section>
+
+    <hr>
+
+    &lt;&lt;&lt; &copy; <a href="about.html">Letícia França</a> &gt;&gt;&gt;
+    <p>
+        <a href="#">Voltar ao Topo</a>
+    </p>
 </body>
 
 </html>
